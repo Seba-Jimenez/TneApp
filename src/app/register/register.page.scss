@@ -1,0 +1,92 @@
+ion-header{
+    position: absolute;
+}
+
+ion-toolbar{
+    --ion-background-color: transparent;
+    --opacity: 0;
+}
+
+ion-content{
+    --ion-background-color: #E1EAF9;
+}
+
+.wapform{
+    margin-top: 30px;
+}
+
+ion-item{
+    ion-input{
+        color: #647B9D
+    }
+}
+
+.password_forgot{
+    text-align: right;
+    ion-button{
+        font-size: 12px;
+    }
+}
+
+.sign-btn-wrap{
+    text-align: center;
+    padding-top: 50px;
+    .sign-btn{
+        --ion-color-primary:#0351cf;
+        color:#F4F6FA;
+    }
+}
+
+.signout-btn-wrap{
+    text-align: center;
+    padding-top: 10px;
+    .signout-btn{
+        --ion-color-primary: #f89c51;
+        color:#F4F6FA;
+    }
+}
+
+h2{
+    padding-top: 1px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+h1{
+    text-transform: uppercase;
+    padding-top: 1px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800; 
+}
+
+.tneImg {
+    background: #F4F6FA;
+    width: 350px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    transform: translateY(3vh);
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    border-radius: 10% 90% 90% 10%;
+}
+ 
+.lock-bg {
+    height: 100px;
+    width: 2px;
+    background: #cecece;
+    margin-left: 50px;
+}
+.lock-img {
+    height: 90px;
+    width: 90px;
+    position: absolute;  
+    top: -170px;  
+    bottom: 80px;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    padding: 2px;
+}

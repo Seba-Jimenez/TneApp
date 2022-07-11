@@ -1,0 +1,63 @@
+<ion-header class="ion-no-border">
+  <ion-item  lines="none">
+    <ion-buttons slot="end">
+      <ion-menu-button>
+        <img class="perfil" src='assets/img/avatar.png'>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  
+  <div class="main-header"></div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="tneImg">
+            <img src="assets/img/Tne-Logo.png">
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="background-color: rgba(0, 217, 255, 0.288); border-radius: 15%; font-weight:  bolder;"  class="right">
+      <ion-col size="7">
+          <ion-label>
+            <ion-note class="ion-margin-start" color="light">
+              SALDO
+            </ion-note>
+            
+            <ion-chip style="background-color: rgba(0, 0, 0, 0.178); width: 120px; font-size: 1.2rem;" color="light">
+              <!--<ion-icon name="add" color="success"></ion-icon>-->
+              <ion-label class="ion-text-wrap">
+                $1.200
+              </ion-label>
+            </ion-chip>
+          </ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card style="top: -18vh;" class="Bordes">
+          <ion-card-header><img class="ajustarImg" src='assets/img/foto.jpg'></ion-card-header>
+          <ion-label style="text-align: start;"><h1 class="AjustarText" style="transform: translateY(-60px);">#Tómate la foto</h1>
+            <h2 style="transform: translateY(-28px); color: rgb(77, 113, 179); font-size: small; box-sizing: content-box; border: 0.2rem; border-radius: 1rem; border-style: solid; padding: 0.5rem;" class="AjustarText">Para tu TNE 2022 desde tu celular</h2></ion-label>
+        </ion-card>
+        <ion-card (click)="pagarQR()" style="top: -12vh;" class="Bordes">
+          <ion-card-header><img class="ajustarImg" src='assets/img/QR.png'></ion-card-header>
+          <ion-label style="text-align: center;"><h1 class="AjustarText">Pagar con QRTNE</h1></ion-label>
+        </ion-card>
+        <ion-card (click)="verHistotial()" style="top: -6vh;" class="Bordes">
+          <ion-card-header><img class="ajustarImg" src='assets/img/historial.jpg'></ion-card-header>
+          <ion-label style="text-align: center;"><h1 class="AjustarText">Historial de viajes</h1></ion-label>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;" color="tertiary">
+    <ion-title class="textoRosado" style="text-align: center;" size="small">#RevalidaTuTNE</ion-title>
+  </ion-toolbar>
+</ion-footer>

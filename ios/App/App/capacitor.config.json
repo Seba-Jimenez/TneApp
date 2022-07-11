@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "TneApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

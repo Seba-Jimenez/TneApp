@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-item  lines="none">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title style="text-align: center;">
+        Historial de viajes
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button>
+          <img class="perfil" src='assets/img/avatar.png'>
+        </ion-menu-button>
+      </ion-buttons>
+    </ion-item>
+</ion-header>
+
+<ion-content>  
+  <div class="container">
+  <capacitor-google-map #map></capacitor-google-map>
+  </div>
+</ion-content>

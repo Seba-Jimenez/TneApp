@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>login</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-img src="assets/img/header1.png"></ion-img>
+  </div>
+  <div class="tneImg">
+    <img src="assets/img/Tne-Logo.png">
+  </div>
+  <div>
+      <h1> Hola Seba</h1>
+      <img src="assets/img/huellaDigital.png" class="lock-img" (click)="showFingerprintAuthDlg()">
+  </div>
+    <div class="sign-btn-wrap">
+      <ion-button shape="round" fill="solid" class="sign-btn" [routerLink]="['/ingreso']">Ingresar</ion-button>
+    </div>
+    <h2>ó</h2>
+    <div class="signout-btn-wrap">
+      <ion-button shape="round" fill="solid" class="signout-btn" [routerLink]="['/register']" >Crear cuenta</ion-button>
+    </div>
+</ion-content>
+
+<ion-footer [translucent]="true">
+
+</ion-footer>

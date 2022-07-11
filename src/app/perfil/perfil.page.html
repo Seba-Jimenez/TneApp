@@ -1,0 +1,87 @@
+<ion-content>
+  <div class="main_content_div">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light"><ion-icon style="font-size: 25px;" name="ellipsis-vertical"></ion-icon></ion-menu-button>
+    </ion-buttons>
+
+    <div class="user_div">
+      <div class="user_back" [style.backgroundImage]="'url(assets/img/hombre.png)'"></div>
+      <div class="first_div">
+        <ion-label class="username">Sebastián Jimenez</ion-label>
+        <ion-label style="color: white; font-size: 14px;">(Seba)</ion-label>
+      </div>
+      
+    </div>
+
+    <div class="content_div">
+      <div class="test_details">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../assets/img/habla-a.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">R.M Santiago</ion-label>
+                  <ion-label class="small_lbl">La florida, Chile</ion-label>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../assets/img/tarjeta-de-identificacion.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">Run</ion-label>
+                  <ion-label class="small_lbl">20.947.768-2</ion-label>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col size="10">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../assets/img/maletin.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">Duoc UC</ion-label>
+                  <ion-label class="small_lbl">Ingenieria en informática</ion-label>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>  
+      </div>
+
+      <div class="list_div">
+        <ion-label>Editar Perfil</ion-label>
+        <ion-icon style="font-size: 20px;" name="person-outline"></ion-icon>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Configurar contraseña de la app</ion-label>
+        <ion-icon style="font-size: 20px;" name="lock-closed-outline"></ion-icon>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Configurar huella digital</ion-label>
+        <ion-icon style="font-size: 20px;" name="finger-print-outline"></ion-icon>
+      </div>
+
+      <div (click)="salir()" class="list_div">
+        <ion-label>Cerrar cuenta</ion-label>
+        <ion-icon style="font-size: 20px;" name="exit-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer style="background: white;" class="ion-no-border">
+  <ion-toolbar style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;" color="tertiary">
+    <ion-title class="textoRosado" style="text-align: center;" size="small">#RevalidaTuTNE</ion-title>
+  </ion-toolbar>
+</ion-footer>
