@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-item  lines="none">
+    <ion-buttons slot="end">
+      <ion-menu-button>
+        <img class="perfil" src='assets/img/avatar.png'>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  
+  <div class="main-header"></div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="tneImg">
+            <img src="assets/img/Tne-Logo.png">
+      </ion-col>
+    </ion-row>
+    <ion-card class="Bordes" style="transform: translateY(-15rem);">
+      <ion-card-header class="AjustarText">
+        <ion-title>Pago TNEQR</ion-title>
+      </ion-card-header>
+      <img class="ajustarImg" src='assets/img/QR.png'>
+      <ion-label class="AjustarText"><h2 style="font-weight: 900; padding: 1rem;">Este codigo QR durará 90 minutos</h2></ion-label>
+    </ion-card>
+  </ion-grid>
+</ion-content>

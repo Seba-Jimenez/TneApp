@@ -1,0 +1,80 @@
+ion-header {
+    background: transparent;
+    margin-top: 10px;
+    ion-item {
+        --background: transparent;
+    }
+    
+    .perfil {
+        height: 32px;
+        width: 39px;
+        position: relative;
+        display: flex;
+        transform: translateY(-15px);
+        border-radius: 200%;
+        border: 2px solid #788143;
+        margin-top: 30px;
+    }
+}
+
+ion-content {
+    .main-header {
+        height: 45vh;
+        width: 150%;
+        background: linear-gradient(90deg, #1B96B5 10%, #0A4AA4 100%);
+        box-shadow:  0px 15px 10px rgba(98, 140, 255, 0.5);
+        border-radius: 0 0 50% 50%;
+        margin-left: -14vh;
+        margin-top: -60px;
+    }
+    .right {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    font-size: 18px;
+    width: 140px;
+    }
+    .ajustarImg {
+    height: 70px;
+    width: 70px;
+    top: 0;
+    transform: translateY(0vh);    
+    }
+    .AjustarText{
+        margin-top: -30px;
+        transform: translateY(-35px);
+        margin-left: 98px;
+        font-weight: bold;
+        position: absolute;
+        color: black;
+    }
+    .Bordes {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-end-start-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+.tneImg {
+    width: 255px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(4vh);
+    padding-bottom: 8vh;
+}
+
+.header-content {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.textoRosado {
+    color: rgb(252, 55, 130);
+    border-bottom-style: solid;
+    padding: 5px;
+}
