@@ -2,8 +2,20 @@
 <widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <access origin="*" />
   
+  <feature name="Camera">
+    <param name="ios-package" value="CDVCamera"/>
+  </feature>
+
+  <feature name="CropPlugin">
+    <param name="ios-package" value="CTCrop"/>
+  </feature>
+
   <feature name="Fingerprint">
     <param name="ios-package" value="Fingerprint"/>
+  </feature>
+
+  <feature name="ImagePicker">
+    <param name="ios-package" value="SOSPicker"/>
   </feature>
 
   

@@ -30,6 +30,14 @@ export class HomePage implements OnInit {
     }, 2000);
   }
 
+  procesoFoto(){
+    this.cargarProceso();
+    setTimeout(() => {
+      this.loadingCtrl.dismiss();
+      this.router.navigate(['/sube-foto']);
+    }, 2000);
+  }
+
   async cargarQR() {
     const loading = await this.loadingCtrl.create({
       message: 'Generando codigo QR...',
@@ -45,4 +53,13 @@ export class HomePage implements OnInit {
     });
     await loading.present();
   }
+
+  async cargarProceso() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Iniciando proceso de revalidación...',
+      spinner: "circles"
+    });
+    await loading.present();
+  }
+  
 }

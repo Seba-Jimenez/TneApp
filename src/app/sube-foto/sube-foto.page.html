@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>subeFoto</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-item  lines="none">
+    <ion-buttons slot="end">
+      <ion-menu-button>
+        <img class="perfil" src='assets/img/avatar.png'>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-item>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" color="light">
+    <ion-col class="tneImg">
+          <img src="assets/img/Tne-Logo.png">
+    </ion-col>
+  
+  <div class="main-header"></div>
 
+  <ion-card class="Bordes">
+  <ion-grid>
+    <ion-row>
+      <div *ngIf="url">
+        <img [src]="santizeUrl(url)" style="justify-content: center; left: 50%; right: 50%;" height="200" width="250"/>
+      </div>
+      <div *ngIf="imageurl">
+        <img [src]="santizeUrl(imageurl)" style="justify-content: center; left: 50%; right: 50%;" height="200" width="250"/>
+      </div>
+    </ion-row>
+    <ion-button color="success" expand="full" fill="outline" shape="round" (click)="selectimageOptions()"><ion-icon name="cloud-upload"></ion-icon>Subir imagen</ion-button>
+    <p  class="AjustarText">{{ handlerMessage }}</p>
+  </ion-grid>
+</ion-card>
 </ion-content>

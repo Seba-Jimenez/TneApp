@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'sube-foto',
     loadChildren: () => import('./sube-foto/sube-foto.module').then( m => m.SubeFotoPageModule)
+  },
+  {
+    path: 'recarga-tarjeta',
+    loadChildren: () => import('./recarga-tarjeta/recarga-tarjeta.module').then( m => m.RecargaTarjetaPageModule)
   }
 ];
 
